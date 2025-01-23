@@ -1,8 +1,6 @@
-import { useTranslation } from "react-i18next";
 import { assets } from "../../images";
 import { useContext } from "react";
 import { ApplicationContext } from "../../App";
-import { setLanguageCookie } from "../../utils/cookieUtils";
 
 const SwitchLanguageButton = ({ swapBg }: { swapBg?: boolean }) => {
     const { isDarkMode } = useContext(ApplicationContext)!;

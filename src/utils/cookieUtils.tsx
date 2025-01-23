@@ -10,7 +10,7 @@ const getCookie = (requestedCookieName: string) => {
     const cookiesDecoded = document.cookie.split(";");
 
     for (let i = 0; i < cookiesDecoded.length; i++) {
-        let currentCookie = cookiesDecoded[i].trim();
+        const currentCookie = cookiesDecoded[i].trim();
         if (currentCookie.startsWith(requestedCookieName)) {
             return currentCookie.slice(requestedCookieName.length + 1);
         }
