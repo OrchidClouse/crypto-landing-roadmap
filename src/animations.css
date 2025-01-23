@@ -1,0 +1,51 @@
+.appear {
+    animation: appearAnimation 0.2s linear;
+}
+
+@keyframes appearAnimation {
+    0% {
+        scale: 1;
+        transform-origin: center;
+    }
+    50% {
+        scale: 0.4;
+        transform-origin: center;
+    }
+    100% {
+        scale: 1;
+        transform-origin: center;
+    }
+}
+
+.moveUp {
+    animation: moveUpAnimation 7s linear forwards;
+}
+
+@keyframes moveUpAnimation {
+    0% {
+        opacity: 0;
+    }
+    10% {
+        opacity: 100;
+    }
+    90% {
+        opacity: 100;
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(-150px);
+    }
+}
+
+.dissapear {
+    animation: dissapearAnimation 1s linear forwards;
+}
+
+@keyframes dissapearAnimation {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
